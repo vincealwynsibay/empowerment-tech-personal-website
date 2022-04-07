@@ -1,0 +1,59 @@
+.hero {
+	display: flex;
+	color: var(--white);
+	align-items: center;
+	padding-top: 1.5rem;
+}
+
+.hero > * {
+	flex-basis: 100%;
+}
+
+.left {
+	align-self: flex-start;
+	padding-top: 6rem;
+}
+
+.left h1 {
+	font-size: 2.8rem;
+	line-height: 1;
+}
+
+.left p {
+	font-size: 1.125rem;
+}
+
+.right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.right div {
+	width: 55%;
+}
+
+/* Hobbies and Interest */
+section.hobbies-and-interests {
+	background-color: var(--secondary-color) !important;
+	padding-block: 3rem;
+}
+
+.hobbies-and-interests > div {
+	display: flex;
+	gap: 5rem;
+}
+
+.hobbies-and-interests > div > * {
+	flex-basis: 100%;
+}
+
+.hobbies-and-interests h3 {
+	font-weight: 300;
+	text-align: center;
+}
+
+.hobbies-and-interests h2 {
+	font-size: 1.8rem;
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
