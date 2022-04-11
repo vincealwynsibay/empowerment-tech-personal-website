@@ -2,44 +2,39 @@
 	display: flex;
 	color: var(--white);
 	align-items: center;
-	padding-top: 1.5rem;
-}
-
-.hero > * {
-	flex-basis: 100%;
+	padding-top: 3rem;
+	padding-bottom: 8rem;
 }
 
 .left {
 	align-self: flex-start;
-	padding-top: 6rem;
 }
 
 .left h1 {
-	font-size: 2.8rem;
+	font-size: 2.38rem;
+	margin-bottom: 0;
 	line-height: 1;
 }
 
+.left h1.highlight {
+	margin-top: 1rem;
+}
+
 .left p {
-	font-size: 1.125rem;
+	font-size: 1.25rem;
+	line-height: 1.6;
 }
 
-.right {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.right div {
-	width: 55%;
-}
-
-/* Hobbies and Interest */
+/* Hobbies and Interest  */
 section.hobbies-and-interests {
 	background-color: var(--secondary-color) !important;
-	padding-block: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 8rem;
 }
 
 .hobbies-and-interests > div {
 	display: flex;
+	flex-direction: column;
 	gap: 5rem;
 }
 
@@ -56,4 +51,32 @@ section.hobbies-and-interests {
 	font-size: 1.8rem;
 	font-weight: 800;
 	margin-bottom: 2rem;
+}
+
+@media (min-width: 63.75rem) {
+	.hero > * {
+		flex-basis: 100%;
+	}
+
+	.left {
+		vertical-align: middle;
+	}
+
+	.right {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.right .img-container {
+		padding-right: 5rem;
+	}
+
+	img {
+		width: 18rem;
+	}
+
+	.hobbies-and-interests > div {
+		flex-direction: row;
+		gap: 5rem;
+	}
 }

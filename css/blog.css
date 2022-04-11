@@ -1,0 +1,52 @@
+.section h2 {
+	text-align: center;
+	font-size: 1.6rem;
+	padding-bottom: 2rem;
+	color: var(--accent-color);
+}
+
+.card {
+	margin-inline: auto;
+	width: 80%;
+	display: flex;
+	background: var(--tertiary-color);
+	gap: 2rem;
+	color: var(--white);
+	border-radius: 0.7rem;
+	flex-wrap: wrap;
+}
+
+.card .content {
+	padding: 1rem;
+}
+
+.card a {
+	color: var(--accent-color);
+}
+
+.card .img-container {
+	width: 100%;
+}
+
+.card img {
+	border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.section {
+	height: 80vh;
+}
+
+@media (min-width: 63.75rem) {
+	.card {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.card .img-container {
+		flex-basis: 25%;
+	}
+
+	.card img {
+		border-radius: 0.7rem 0 0 0.7rem;
+	}
+}

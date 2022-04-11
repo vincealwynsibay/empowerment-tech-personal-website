@@ -47,36 +47,62 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/blog.css" />
 	</head>
 	<body>
 		<header class="header container">
-			<div class="logo">
+			<div class="overlay">
+				<div class="mobile-nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
+			</div>
+			<div class="header__logo">
 				<h3><a href="index.html">Vince.</a></h3>
 			</div>
 			<nav class="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contact.html">Contact Me</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="photo-gallery.html">Photo Gallery</a></li>
-					<li><a href="community.html">Community</a></li>
-				</ul>
+				<a id="hamburger" href="#" class="nav__menu hide-for-desktop">
+					<span></span><span></span><span></span>
+				</a>
+
+				<div class="nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
 			</nav>
 		</header>
 		<section class="section blogs">
-			<h2>BLOGS</h2>
-			<div class="card">
+			<h2>Blog</h2>
+			<div class="card" data-aos="fade-right">
 				<div class="img-container">
-					<img src="" alt="" />
+					<img src="./assets/blog-thumbnail.png" alt="" />
 				</div>
-				<h3>Title</h3>
-				<p>Content</p>
+				<div class="content">
+					<h3>Me, Myself, and I</h3>
+					<p>
+						I am Vince Alwyn L. Sibay, a ICT-MAWD Senior High School
+						Student from STI College Tagum...
+						<a
+							href="https://medium.com/@vincealwynsibay1/me-myself-and-i-acd19d0a0b4f?source=friends_link&sk=12743f6af7f6e30507f20a48daec9f2f"
+							>Read More</a
+						>
+					</p>
+				</div>
 			</div>
 		</section>
 
-		<footer class="footer">
-			<p>&copy; 2022 Vince Alwyn Sibay. All rights reserved.</p>
+		<footer class="footer container">
+			<p class="highlight">
+				&copy; 2022 Vince Alwyn Sibay. All rights reserved.
+			</p>
 		</footer>
+		<script src="./js/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();

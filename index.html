@@ -51,22 +51,35 @@
 	</head>
 	<body>
 		<header class="header container">
-			<div class="logo">
+			<div class="overlay">
+				<div class="mobile-nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
+			</div>
+			<div class="header__logo">
 				<h3><a href="index.html">Vince.</a></h3>
 			</div>
 			<nav class="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contact.html">Contact Me</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="photo-gallery.html">Photo Gallery</a></li>
-					<li><a href="community.html">Community</a></li>
-				</ul>
+				<a id="hamburger" href="#" class="nav__menu hide-for-desktop">
+					<span></span><span></span><span></span>
+				</a>
+
+				<div class="nav__links hide-for-mobile">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
 			</nav>
 		</header>
 
 		<section class="hero container">
-			<div class="left">
+			<div class="left" data-aos="fade-right">
 				<h1>Vince Alwyn Sibay</h1>
 				<h1 class="highlight">Senior High School Student</h1>
 				<p>
@@ -74,17 +87,21 @@
 					planning to take Computer Science in College
 				</p>
 			</div>
-			<div class="right">
+			<div class="right" data-aos="fade-left">
 				<div class="img-container">
-					<img src="./assets/hero-image.png" alt="" />
+					<img
+						class="hide-for-mobile"
+						src="./assets/hero-image.png"
+						alt=""
+					/>
 				</div>
 			</div>
 		</section>
 
 		<section class="hobbies-and-interests container">
-			<h2>Hobbies & Interests</h2>
+			<h2 data-aos="fade-right">Hobbies & Interests</h2>
 			<div class="">
-				<div class="card">
+				<div class="card" data-aos="fade-up">
 					<div class="img-container">
 						<img
 							src="./assets/Hand coding-pana.svg"
@@ -93,13 +110,13 @@
 					</div>
 					<h3>Coding/Programming</h3>
 				</div>
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="100">
 					<div class="img-container">
 						<img src="./assets/Gaming-bro.svg" alt="gaming image" />
 					</div>
 					<h3>Gaming</h3>
 				</div>
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="200">
 					<div class="img-container">
 						<img
 							src="./assets/Mobile UX-pana.svg"
@@ -117,6 +134,7 @@
 			</p>
 		</footer>
 
+		<script src="./js/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();

@@ -48,54 +48,87 @@
 		/>
 
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/community.css" />
 	</head>
 	<body>
 		<header class="header container">
-			<div class="logo">
+			<div class="overlay">
+				<div class="mobile-nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
+			</div>
+			<div class="header__logo">
 				<h3><a href="index.html">Vince.</a></h3>
 			</div>
 			<nav class="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contact.html">Contact Me</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="photo-gallery.html">Photo Gallery</a></li>
-					<li><a href="community.html">Community</a></li>
-				</ul>
+				<a id="hamburger" href="#" class="nav__menu hide-for-desktop">
+					<span></span><span></span><span></span>
+				</a>
+
+				<div class="nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+				</div>
 			</nav>
 		</header>
-		<section class="section community">
+		<section class="section community container">
 			<h2>COMMUNITY</h2>
-			<div class="">
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
-				<div class="card">
-					<img src="" alt="" />
-					<h3></h3>
-				</div>
+			<div class="grid">
+				<a href="" class="card" data-aos="fade-up">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="100">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="200">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="300">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="100">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="200">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="300">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="400">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="100">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
+				<a href="" class="card" data-aos="fade-up" data-aos-delay="200">
+					<img src="./assets/1.jpg" alt="" />
+					<h3>John Doe's Website</h3>
+				</a>
 			</div>
 		</section>
-		<footer class="footer">
-			<p>&copy; 2022 Vince Alwyn Sibay. All rights reserved.</p>
+		<footer class="footer container">
+			<p class="highlight">
+				&copy; 2022 Vince Alwyn Sibay. All rights reserved.
+			</p>
 		</footer>
+		<script src="./js/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init();

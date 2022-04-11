@@ -1,0 +1,85 @@
+.contact {
+	width: 80%;
+	background-color: var(--tertiary-color);
+	margin: 0 auto;
+	padding-block: 2rem;
+	margin-bottom: 5rem;
+}
+
+.contact > div {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.contact > div > * {
+	flex-basis: 100%;
+}
+
+.contact h2 {
+	text-align: center;
+	font-size: 1.6rem;
+	padding-bottom: 2rem;
+	color: var(--accent-color);
+}
+
+.contact h3 {
+	font-size: 1.5rem;
+	color: var(--white);
+	padding-bottom: 2rem;
+}
+
+.left .social-link {
+	margin-bottom: 2.3rem;
+}
+
+.left .social-link a:hover {
+	opacity: 0.8;
+}
+
+.right form > * {
+	display: block;
+	font-family: "Poppins";
+}
+
+.right form input,
+.right form textarea {
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.right form button {
+	text-transform: uppercase;
+	outline: 0;
+	background: var(--accent-color);
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #ffffff;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.right form button:hover {
+	opacity: 0.9;
+}
+
+.right form > *:not(button) {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 63.75rem) {
+	.contact > div {
+		flex-direction: row;
+		/* flex-wrap: no-wrap; */
+	}
+}
