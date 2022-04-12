@@ -2,8 +2,8 @@
 	display: flex;
 	color: var(--white);
 	align-items: center;
-	padding-top: 3rem;
-	padding-bottom: 8rem;
+	padding-top: 5rem;
+	padding-bottom: 10rem;
 }
 
 .left {
@@ -23,6 +23,10 @@
 .left p {
 	font-size: 1.25rem;
 	line-height: 1.6;
+}
+
+.right {
+	display: none;
 }
 
 /* Hobbies and Interest  */
@@ -54,6 +58,11 @@ section.hobbies-and-interests {
 }
 
 @media (min-width: 63.75rem) {
+	.hero {
+		padding-top: 3rem;
+		padding-bottom: 8rem;
+	}
+
 	.hero > * {
 		flex-basis: 100%;
 	}
