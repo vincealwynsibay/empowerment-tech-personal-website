@@ -5,25 +5,25 @@
 	color: var(--accent-color);
 }
 
-.grid {
+.website-links {
 	display: grid;
 	gap: 3rem;
-	align-items: center;
-	justify-content: center;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.card {
-	background-color: var(--tertiary-color);
-	display: flex;
-	flex-direction: column;
+.website-links > div {
+	margin-bottom: 3rem;
+	color: white;
+	padding: 1.5rem 1rem;
+	border-radius: 5px;
+	border: 1px solid rgb(172, 172, 172);
 }
 
-.card img {
-	flex-basis: 80%;
+.website-links > div a {
+	padding-left: 1.5rem;
+	color: var(--accent-color);
 }
 
-.card h3 {
-	padding-left: 1rem;
-	color: var(--white);
+.website-links > div a:hover {
+	opacity: 0.7;
 }
