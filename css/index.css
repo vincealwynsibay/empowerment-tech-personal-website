@@ -32,8 +32,9 @@
 /* Hobbies and Interest  */
 section.hobbies-and-interests {
 	background-color: var(--secondary-color) !important;
-	padding-top: 3rem;
+	padding-top: 6rem;
 	padding-bottom: 8rem;
+	text-align: center;
 }
 
 .hobbies-and-interests > div {
@@ -46,6 +47,10 @@ section.hobbies-and-interests {
 	flex-basis: 100%;
 }
 
+.hobbies-and-interests img {
+	width: 80%;
+}
+
 .hobbies-and-interests h3 {
 	font-weight: 300;
 	text-align: center;
@@ -54,7 +59,7 @@ section.hobbies-and-interests {
 .hobbies-and-interests h2 {
 	font-size: 1.8rem;
 	font-weight: 800;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 @media (min-width: 63.75rem) {
