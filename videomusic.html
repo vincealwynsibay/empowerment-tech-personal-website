@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO -->
+		<meta
+			name="description"
+			content="Welcome to the personal website of Vince Alwyn L Sibay."
+		/>
+		<meta name="author" content="Vince Alwyn Sibay" />
+		<link
+			rel="image_src"
+			href="https://serving.photos.photobox.com/234177075e773d3661c1bd48c6383a933c2ff74fdde0ac8613684a79ccfa34f45e3e4dbb.jpg"
+		/>
+
+		<meta
+			property="og:image"
+			content="https://serving.photos.photobox.com/234177075e773d3661c1bd48c6383a933c2ff74fdde0ac8613684a79ccfa34f45e3e4dbb.jpg"
+		/>
+		<meta property="og:title" content="Vince Alwyn L. Sibay" />
+		<meta
+			property="og:description"
+			content="Welcome to the personal website of Vince Alwyn L Sibay."
+		/>
+		<meta property="og:type" content="website" />
+
+		<title>Vince Alwyn L. Sibay</title>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800&family=Poppins:wght@400;500;700;800&family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- AOS -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/videomusic.css" />
+	</head>
+	<body>
+		<header class="header container">
+			<div class="overlay">
+				<div class="mobile-nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+					<a href="videomusic.html">Video and Music</a>
+				</div>
+			</div>
+			<div class="header__logo">
+				<h3><a href="index.html">Vince.</a></h3>
+			</div>
+			<nav class="nav">
+				<a id="hamburger" href="#" class="nav__menu hide-for-desktop">
+					<span></span><span></span><span></span>
+				</a>
+
+				<div class="nav__links">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact Me</a>
+					<a href="blog.html">Blog</a>
+					<a href="photo-gallery.html">Photo Gallery</a>
+					<a href="community.html">Community</a>
+					<a href="videomusic.html">Video and Music</a>
+				</div>
+			</nav>
+		</header>
+
+		<section class="videomusic container">
+			<div>
+				<h2>Favorite Video</h2>
+				<video width="500" height="300" controls>
+					<source src="./assets/video.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div>
+				<h2>Favorite Music</h2>
+				<audio controls>
+					<source src="./assets/music.mp3" type="audio/mp3" />
+				</audio>
+			</div>
+		</section>
+
+		<footer class="footer container">
+			<p class="highlight">
+				&copy; 2022 Vince Alwyn Sibay. All rights reserved.
+			</p>
+		</footer>
+		<script src="./js/script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

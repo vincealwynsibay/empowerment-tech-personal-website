@@ -1,0 +1,16 @@
+.videomusic {
+	display: flex;
+	justify-content: center;
+}
+
+.videomusic > div {
+	flex-basis: 100%;
+}
+
+h2 {
+	color: var(--secondary-color);
+}
+
+.footer {
+	margin-top: 3rem;
+}
